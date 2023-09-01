@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edit_name"
+            style="@style/custom_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter New Name "
+
+            />
+
+        <EditText
+            android:id="@+id/edit_email"
+            style="@style/custom_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter New E-mail"
+            android:inputType="textPersonName"
+            />
+
+        <EditText
+            android:id="@+id/edit_number"
+            style="@style/custom_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter New Number"
+            android:inputType="textPersonName"
+            />
+
+        <EditText
+            style="@style/custom_style"
+            android:id="@+id/edit_bloodGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter New Blood Group"
+            android:inputType="textPersonName"
+            />
+
+        <EditText
+            android:id="@+id/edit_type"
+            style="@style/custom_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter New Type"
+            android:inputType="textPersonName"
+            />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/edt_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Update"
+            android:textStyle="bold"
+            android:textSize="18sp"
+
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:background="@drawable/button_background"
+
+            />
+    </LinearLayout>
+</layout>

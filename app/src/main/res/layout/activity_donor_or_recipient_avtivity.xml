@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#83F44336"
+                android:elevation="4dp"
+                android:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="#83F44336"
+                    android:padding="20dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profile_image"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/profile_picture" />
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@id/profile_image"
+                        android:fontFamily="@font/archivo_black"
+                        android:includeFontPadding="false"
+                        android:text="Zyad Elfiky"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/name"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_toEndOf="@id/profile_image"
+                        android:text="User Type "
+                        android:textSize="14sp" />
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/bloodGroup"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_below="@id/type"-->
+<!--                        android:layout_centerVertical="true"-->
+<!--                        android:layout_marginStart="10dp"-->
+<!--                        android:layout_marginTop="4dp"-->
+<!--                        android:layout_toEndOf="@id/profile_image"-->
+<!--                        android:text="b-Group "-->
+<!--                        android:textSize="14sp"-->
+<!--                        android:textStyle="bold" />-->
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/bloodGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:background="#27F44336"
+                        android:drawableStart="@drawable/bloodroup"
+                        android:drawablePadding="10dp"
+                        android:padding="10dp"
+                        android:text="id"
+                        android:textColor="#000"
+                        android:textColorHint="#000"
+                        android:textSize="18sp"
+                        android:theme="@style/TextInputLayoutStyle"
+                        app:boxStrokeColor="#000"
+                        app:hintTextAppearance="@color/design_default_color_primary" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/userId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:background="#27F44336"
+                        android:drawableStart="@drawable/ic_id"
+                        android:drawablePadding="10dp"
+                        android:padding="10dp"
+                        android:text="id"
+                        android:textColor="#000"
+                        android:textColorHint="#000"
+                        android:textSize="18sp"
+                        android:theme="@style/TextInputLayoutStyle"
+                        app:boxStrokeColor="#000"
+                        app:hintTextAppearance="@color/design_default_color_primary" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:background="#27F44336"
+                        android:drawableStart="@drawable/ic_email"
+                        android:drawablePadding="10dp"
+
+                        android:padding="10dp"
+                        android:text="E-mail"
+                        android:textColor="#000"
+                        android:textColorHint="#000"
+                        android:textSize="18sp"
+                        android:theme="@style/TextInputLayoutStyle"
+                        app:boxStrokeColor="#000"
+                        app:hintTextAppearance="@color/design_default_color_primary" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/userNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="#27F44336"
+                        android:drawableStart="@drawable/ic_phone"
+                        android:drawablePadding="10dp"
+                        android:hint="Enter Full Name"
+                        android:padding="10dp"
+                        android:text="Number"
+                        android:textColor="#000"
+                        android:textColorHint="#000"
+                        android:textSize="18sp"
+                        android:theme="@style/TextInputLayoutStyle"
+                        app:boxStrokeColor="#000"
+                        app:hintTextAppearance="@color/design_default_color_primary" />
+
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnSend"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginTop="100dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_background"
+                        android:text="Send E-Mail"
+                        android:textAllCaps="false"
+                        android:textColor="#FFF"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>
